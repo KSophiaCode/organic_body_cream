@@ -1,30 +1,61 @@
 @import url(https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900
 );
 
-body{
-    background: url(images/organic\ body\ cream.jpg);
-    background-size: cover;
-    background: no-repeat;
-}
-.LogInBox{
-font-family: "Montserrat", sans-serif;
-font-optical-sizing: auto;
-font-weight: 500px;
-font-style: normal;
-}
-input{
-display: flex;
-justify-content: center;
-align-items: center;
-column-gap: 10px;
-padding: 10px 0;
-background-color: transparent;
-color: #22840b;
-border: 1px solid #228d0b;
-border-radius: 7px;
-font-family: "Montserrat", sans-serif;
-cursor: pointer;
-}
-p{
-    text-align: center;
-}
+body {
+    font-family: Montserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 50px;
+    font-style: normal;
+    background-color: #f2f2f2;
+  }
+  
+  .Heading {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .LogInBox {
+    background: url(images/organic\ body\ cream.jpg), no-repeat;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 2%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="password"] {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .Login {
+    text-align: left;
+  }
+  
+  .Login p1 {
+    margin-bottom: 0;
+  }
+  
+  .Login a {
+    color: #4caf50;
+  }
+  
