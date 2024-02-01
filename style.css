@@ -1,0 +1,30 @@
+@import url(https://fonts.google.com/share?selection.family=Montserrat:ital,wght@0,100..900;1,100..900
+);
+
+body{
+    background: url(images/organic\ body\ cream.jpg);
+    background-size: cover;
+    background: no-repeat;
+}
+.LogInBox{
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: 500px;
+font-style: normal;
+}
+input{
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 10px;
+padding: 10px 0;
+background-color: transparent;
+color: #22840b;
+border: 1px solid #228d0b;
+border-radius: 7px;
+font-family: "Montserrat", sans-serif;
+cursor: pointer;
+}
+p{
+    text-align: center;
+}
