@@ -15,10 +15,13 @@ body {
   }
   
   .LogInBox {
-    background: url(images/organic\ body\ cream.jpg), no-repeat;
+    background: url(images/organic\ body\ cream.jpg);
+    background: size cover;   
     background-color: #ffffff;
-    padding: 10px;
-    border-radius: 2%;
+    width: 2000px;
+    height: 1000px;
+    padding: 20px;
+    border-radius: 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -28,6 +31,7 @@ body {
     width: 20%;
     padding: 10px;
     margin-bottom: 10px;
+    color: #ccc;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
@@ -48,7 +52,7 @@ body {
   }
   
   .Login {
-    text-align: left;
+    text-align: flex;
   }
   
   .Login p1 {
