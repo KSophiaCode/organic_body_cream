@@ -6,23 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
 </head>
 <body>
     <div>
         <form>
     <div class="Heading">
-        <h2>Homepage</h2> <br><br><br>
+        <h2>Homepage</h2> 
     </div>
     <div class="LogInBox">
         <p>Create An Account</p>
-        <input type="text" placeholder="Fullname" required> <br><br>
-        <input type="text" placeholder="Email Address" required> <br><br>
-        <input type="number" placeholder="Phone Number" required> <br><br>
-        <input type="password" placeholder="Password" required 
-        <img src="images/eyelogo.png" alt="" width="10" height="10"> <br><br>
-        <input type="password" placeholder="Confirm Password" required 
-        <img src="images/eyelogo.png" alt="" width="10" height="10"> <br><br>
+       Fullname <br> <input type="text" placeholder="" required> <br><br>
+       Email Address <br> <input type="text" placeholder="" required> <br><br>
+       Phone Number<br> <input type="number" placeholder="" required> <br><br>
+       Password <br> <input type="password" placeholder="" required> 
+       <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+ <br><br>
+        Confirm Password <br> <input type="password" placeholder="" required="" id="id_password">
+        <i class="far fa-eye" id="toggleconfirmPassword" style="margin-left: -30px; cursor: pointer;"></i> <br><br>
    <button>Register</button> <br> <br>
+   <script>
+    const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+   </script>
    <button>Register with Google   <img src="images/google.png" alt="" width="10" height="10"> </button> <br><br>
    <div class="Login">
     <p1>Already have an account? <a href="#">Login</a></p1>
